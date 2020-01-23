@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.card {
+ 
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+    
+    
+    
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 10px -16px;
+}    
+    
+    
+.column {
+  float: left;
+  width: 30%;
+  padding: 25px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    
+.content {
+  background-color: silver;
+  padding: 10px;
+}  
+    
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("southindian.jpeg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+  
+ body, html {
+  height: 100%;
+  margin: 0;
+  
+}   
+ 
+    
+    
+.abc {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#FEFFED;
+overflow:auto
+}
+ 
+    
+    
+    
+
+    
+    
+h2 {
+
+padding:20px 35px;
+margin:-10px -50px;
+text-align:center;
+border-radius:10px 10px 0 0
+}    
+   
+    
+img#close {
+position:absolute;
+right:-1px;
+top:-1px;
+cursor:pointer
+}    
+    
+    
+    
+    
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+  background-color: #4CAF50;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+    
+    
+   
+    
+    
+    
+
+
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+  margin-right:-35px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+   
+}
+
+
+.right {
+  text-align: left;
+}
+
+
+
+
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+
+.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+    
+    
+    
+    
+    
+    
+    
+    
+</style>
+</head>
+    
+    
+   
+    
+    
+    
+    
+<body background="back.jpg">
+
+   
+ <script>
+    
+function fun(a){ 
+
+document.getElementById(a).style.display = "block";
+}
+
+function fun2(a){ 
+document.getElementById(a).style.display = "none";
+}     
+    
+</script>    
+    
+    <ul>
+  
+  <li><a href="contactus.html">Contact</a></li>
+  <li><a href="aboutus.html">About</a></li>
+  <li ><a  href="">Home</a></li>
+</ul>     
+    
+    
+    
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">South Indian Cuisines</h1>
+    <p>Flavour of South</p>
+    
+  </div>
+</div>
+    
+    
+
+
+    
+<div class="row">
+  <div class="column">
+      <div class="content">
+  
+          <div class="card">
+            <img src="southindian.jpeg"  style="width:100%">
+        <h1>Sundaram South Indian </h1>
+        <p class="price">Chandigarh</p>
+        <p>First branch of small,family run south indian restaurant chain, open since 2002.</p>
+        <p><button onclick="fun('s1')">Details</button></p>
+</div>
+
+          
+          
+      </div>
+  </div>
+
+  <div class="column">
+      <div class="content">
+   
+           <div class="card">
+            <img src="southindian.jpeg"  style="width:100%">
+        <h1>Karthik South Indian Restaurant</h1>
+        <p class="price">Chandigarh</p>
+        <p>COSY : CASUAL : RESTAURANT OPTION</p>
+        <p><button onclick="fun('s2')">Details</button></p>
+          
+          
+          
+          
+  </div>
+    </div>
+    </div>
+  <div class="column">
+      <div class="content">
+   
+           <div class="card">
+            <img src="southindian.jpeg"  style="width:100%">
+        <h1>Kamats Restaurants </h1>
+        <p class="price">Chandigarh</p>
+        <p>COSY : CASUAL : GOOD FOR KIDS</p>
+        <p><button onclick="fun('s3')">Details</button></p>
+          
+         
+          
+      </div>
+  </div>
+</div>
+    </div>
+    
+    
+    
+   
+     
+<div class="row">
+  <div class="column">
+      <div class="content">
+  
+          <div class="card">
+            <img src="southindian.jpeg"  style="width:100%">
+        <h1>Sagar Ratna </h1>
+        <p class="price">Chandigarh</p>
+        <p>----------------------------------------</p>
+        <p><button onclick="fun('s4')">Details</button></p>
+</div>
+
+          
+          
+      </div>
+  </div>
+
+  <div class="column">
+      <div class="content">
+   
+           <div class="card">
+            <img src="southindian.jpeg"  style="width:100%">
+        <h1>Sundarams</h1>
+        <p class="price">Chandigarh</p>
+        <p>----------------------------</p>
+        <p><button onclick="fun('s5')">Details</button></p>
+          
+          
+          
+          
+  </div>
+    </div>
+    </div>
+  <div class="column">
+      <div class="content">
+   
+           <div class="card">
+            <img src="southindian.jpeg"  style="width:100%">
+        <h1>South Indian Mess </h1>
+        <p class="price">Chandigarh</p>
+        <p>---------------------------</p>
+        <p><button onclick="fun('s6')">Details</button></p>
+          
+         
+          
+      </div>
+  </div>
+</div>
+    </div>
+  
+    
+    
+    
+    
+
+ 
+   
+    
+<div id="s1" class="abc">    
+    <h2>Sundarams</h2>
+    <br><br>
+<p>Popular for serving authentic south-Indian food, Sundarams Chandigarh is serving people for a long time now. Dream project of a couple from Tamil Nadu who left their job and converted their hobby into a business, Sundarams serves delicious south-Indian dishes. Cozy interiors along with old classical Bollywood numbers playing and a smiling staff are few highlights of this south Indian restaurant in Chandigarh. Must try items out of their menu are masala ghee roast and Mysore masala dosa. Rice papad and rasam is also very delicious.
+    </p>
+    
+<center><p><b>Address 1: The Eating House, Hotel Aroma, Sector 22, Chandigarh.</b></p>
+<br>
+<p><b>Address 2: SCO 35, Madhya Marg, Sector 26, Chandigarh.</b></p>    
+<br><br>
+
+
+ 
+<b>Price: Rs. 500 for 2.</b>
+</center>    
+    
+    
+<img id="close" src="3.png" onclick ="fun2('s1')">
+    
+    
+    
+    
+        
+ <h3>User Ratings</h3>   
+<div class="row">
+  <div class="side">
+    <div>**5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>**4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>**3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>**2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>**1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+    
+    
+    
+    
+<div id="s2" class="abc">    
+    <h2>-----------------</h2>
+    <br><br>
+<p> </p>
+    
+<center><p><b>Address 1: -----------------------</b></p>
+<br>
+<p><b>Address 2: ------------------------.</b></p>    
+<br><br>
+
+
+ 
+<b>Price: --------------</b>
+</center>    
+    
+    
+<img id="close" src="3.png" onclick ="fun2('s2')">
+    
+    
+    
+    
+    
+        
+ <h3>User Ratings</h3>   
+<div class="row">
+  <div class="side">
+    <div>**5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>**4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>**3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>**2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>**1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+    
+    
+    
+    
+<div id="s3" class="abc">    
+    <h2>------------</h2>
+    <br><br>
+<p> </p>
+    
+<center><p><b>Address 1: -----------------------</b></p>
+<br>
+<p><b>Address 2: ------------------------.</b></p>    
+<br><br>
+
+
+ 
+<b>Price: --------------</b>
+</center>    
+    
+    
+<img id="close" src="3.png" onclick ="fun2('s3')">
+    
+    
+    
+    
+    
+ <h3>User Ratings</h3>   
+<div class="row">
+  <div class="side">
+    <div>**5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>**4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>**3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>**2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>**1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+    
+    
+     
+<div id="s4" class="abc">    
+    <h2>--------------</h2>
+    <br><br>
+<p> </p>
+    
+<center><p><b>Address 1: -----------------------</b></p>
+<br>
+<p><b>Address 2: ------------------------.</b></p>    
+<br><br>
+
+
+ 
+<b>Price: --------------</b>
+</center>    
+    
+    
+<img id="close" src="3.png" onclick ="fun2('s4')">
+    
+    
+    
+    
+       
+ <h3>User Ratings</h3>   
+<div class="row">
+  <div class="side">
+    <div>**5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>**4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>**3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>**2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>**1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+ 
+    
+    
+    
+    
+    
+    
+    
+</div>
+    
+    
+        
+<div id="s5" class="abc">    
+    <h2>-------------</h2>
+    <br><br>
+<p> </p>
+    
+<center><p><b>Address 1: -----------------------</b></p>
+<br>
+<p><b>Address 2: ------------------------.</b></p>    
+<br><br>
+
+
+ 
+<b>Price: --------------</b>
+</center>    
+    
+    
+<img id="close" src="3.png" onclick ="fun2('s5')">
+    
+    
+    
+    
+      
+ <h3>User Ratings</h3>   
+<div class="row">
+  <div class="side">
+    <div>**5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>**4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>**3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>**2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>**1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+  
+    
+    
+    
+    
+    
+    
+</div>
+    
+    
+    
+        
+<div id="s6" class="abc">    
+    <h2>--------------</h2>
+    <br><br>
+<p> </p>
+    
+<center><p><b>Address 1: -----------------------</b></p>
+<br>
+<p><b>Address 2: ------------------------.</b></p>    
+<br><br>
+
+
+ 
+<b>Price: --------------</b>
+</center>    
+    
+    
+<img id="close" src="3.png" onclick ="fun2('s6')">
+    
+    
+    
+    
+    
+        
+ <h3>User Ratings</h3>   
+<div class="row">
+  <div class="side">
+    <div>**5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>**4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>**3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>**2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>**1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+</div>
+    
+    
+    
+
+
+</body>
+</html>
